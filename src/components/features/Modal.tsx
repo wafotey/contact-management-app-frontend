@@ -34,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({ modalOpen, actionType, handleActionConfir
               </button>
               <button
                 onClick={handleActionConfirm}
-                className={`px-4 py-2 ${actionType === "delete" ? "bg-red-600 text-white" : "bg-white text-black"} border rounded-md hover:bg-gray-200`}
+                className={`className="px-4 py-2 bg-white text-black border border-gray-400 rounded-md hover:bg-gray-200"`}
               >
                 {actionType === "delete" ? "Delete" : actionType === "bookmark" ? "Bookmark" : "Edit"}
               </button>
